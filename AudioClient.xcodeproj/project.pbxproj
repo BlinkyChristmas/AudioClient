@@ -7,17 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BA647D02C4C7B40005132C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647CF2C4C7B40005132C5 /* AppDelegate.swift */; };
 		2BA647D22C4C7B41005132C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA647D12C4C7B41005132C5 /* Assets.xcassets */; };
 		2BA647D52C4C7B41005132C5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BA647D42C4C7B41005132C5 /* Base */; };
+		2BA647EF2C4C7BF2005132C5 /* HourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647DC2C4C7BF1005132C5 /* HourMinute.swift */; };
+		2BA647F02C4C7BF2005132C5 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647DD2C4C7BF1005132C5 /* MyView.swift */; };
+		2BA647F12C4C7BF2005132C5 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647DF2C4C7BF1005132C5 /* Connection.swift */; };
+		2BA647F22C4C7BF2005132C5 /* NetworkOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA647E02C4C7BF1005132C5 /* NetworkOptionView.xib */; };
+		2BA647F32C4C7BF2005132C5 /* NetworkOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647E12C4C7BF1005132C5 /* NetworkOptionViewController.swift */; };
+		2BA647F42C4C7BF2005132C5 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647E22C4C7BF1005132C5 /* Packet.swift */; };
+		2BA647F52C4C7BF2005132C5 /* MediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647E42C4C7BF1005132C5 /* MediaPlayer.swift */; };
+		2BA647F62C4C7BF2005132C5 /* MediaWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA647E52C4C7BF1005132C5 /* MediaWindow.xib */; };
+		2BA647F72C4C7BF2005132C5 /* MediaWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647E62C4C7BF1005132C5 /* MediaWindowController.swift */; };
+		2BA647F82C4C7BF2005132C5 /* MovieOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA647E72C4C7BF1005132C5 /* MovieOptionView.xib */; };
+		2BA647F92C4C7BF2005132C5 /* MovieOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647E82C4C7BF1005132C5 /* MovieOptionViewController.swift */; };
+		2BA647FA2C4C7BF2005132C5 /* BinaryInteger+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647EA2C4C7BF1005132C5 /* BinaryInteger+extension.swift */; };
+		2BA647FB2C4C7BF2005132C5 /* Data+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647EB2C4C7BF1005132C5 /* Data+extension.swift */; };
+		2BA647FC2C4C7BF2005132C5 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647EC2C4C7BF1005132C5 /* URL+extension.swift */; };
+		2BA647FD2C4C7BF2005132C5 /* Window+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647ED2C4C7BF1005132C5 /* Window+extension.swift */; };
+		2BA647FF2C4C7CB1005132C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA647FE2C4C7CB1005132C5 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BA647CC2C4C7B40005132C5 /* AudioClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BA647CF2C4C7B40005132C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA647D12C4C7B41005132C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BA647D42C4C7B41005132C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2BA647D62C4C7B41005132C5 /* AudioClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioClient.entitlements; sourceTree = "<group>"; };
+		2BA647DC2C4C7BF1005132C5 /* HourMinute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourMinute.swift; sourceTree = "<group>"; };
+		2BA647DD2C4C7BF1005132C5 /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		2BA647DF2C4C7BF1005132C5 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		2BA647E02C4C7BF1005132C5 /* NetworkOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkOptionView.xib; sourceTree = "<group>"; };
+		2BA647E12C4C7BF1005132C5 /* NetworkOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOptionViewController.swift; sourceTree = "<group>"; };
+		2BA647E22C4C7BF1005132C5 /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
+		2BA647E42C4C7BF1005132C5 /* MediaPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayer.swift; sourceTree = "<group>"; };
+		2BA647E52C4C7BF1005132C5 /* MediaWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaWindow.xib; sourceTree = "<group>"; };
+		2BA647E62C4C7BF1005132C5 /* MediaWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaWindowController.swift; sourceTree = "<group>"; };
+		2BA647E72C4C7BF1005132C5 /* MovieOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieOptionView.xib; sourceTree = "<group>"; };
+		2BA647E82C4C7BF1005132C5 /* MovieOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieOptionViewController.swift; sourceTree = "<group>"; };
+		2BA647EA2C4C7BF1005132C5 /* BinaryInteger+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+extension.swift"; sourceTree = "<group>"; };
+		2BA647EB2C4C7BF1005132C5 /* Data+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+extension.swift"; sourceTree = "<group>"; };
+		2BA647EC2C4C7BF1005132C5 /* URL+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+extension.swift"; sourceTree = "<group>"; };
+		2BA647ED2C4C7BF1005132C5 /* Window+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Window+extension.swift"; sourceTree = "<group>"; };
+		2BA647FE2C4C7CB1005132C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +80,59 @@
 		2BA647CE2C4C7B40005132C5 /* AudioClient */ = {
 			isa = PBXGroup;
 			children = (
-				2BA647CF2C4C7B40005132C5 /* AppDelegate.swift */,
+				2BA647EE2C4C7BF1005132C5 /* Extension */,
+				2BA647E32C4C7BF1005132C5 /* Network */,
+				2BA647E92C4C7BF1005132C5 /* Player */,
+				2BA647DE2C4C7BF1005132C5 /* Utility */,
 				2BA647D12C4C7B41005132C5 /* Assets.xcassets */,
+				2BA647FE2C4C7CB1005132C5 /* AppDelegate.swift */,
 				2BA647D32C4C7B41005132C5 /* MainMenu.xib */,
 				2BA647D62C4C7B41005132C5 /* AudioClient.entitlements */,
 			);
 			path = AudioClient;
+			sourceTree = "<group>";
+		};
+		2BA647DE2C4C7BF1005132C5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2BA647DC2C4C7BF1005132C5 /* HourMinute.swift */,
+				2BA647DD2C4C7BF1005132C5 /* MyView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2BA647E32C4C7BF1005132C5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2BA647DF2C4C7BF1005132C5 /* Connection.swift */,
+				2BA647E02C4C7BF1005132C5 /* NetworkOptionView.xib */,
+				2BA647E12C4C7BF1005132C5 /* NetworkOptionViewController.swift */,
+				2BA647E22C4C7BF1005132C5 /* Packet.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2BA647E92C4C7BF1005132C5 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				2BA647E42C4C7BF1005132C5 /* MediaPlayer.swift */,
+				2BA647E52C4C7BF1005132C5 /* MediaWindow.xib */,
+				2BA647E62C4C7BF1005132C5 /* MediaWindowController.swift */,
+				2BA647E72C4C7BF1005132C5 /* MovieOptionView.xib */,
+				2BA647E82C4C7BF1005132C5 /* MovieOptionViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		2BA647EE2C4C7BF1005132C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2BA647EA2C4C7BF1005132C5 /* BinaryInteger+extension.swift */,
+				2BA647EB2C4C7BF1005132C5 /* Data+extension.swift */,
+				2BA647EC2C4C7BF1005132C5 /* URL+extension.swift */,
+				2BA647ED2C4C7BF1005132C5 /* Window+extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +164,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					2BA647CB2C4C7B40005132C5 = {
 						CreatedOnToolsVersion = 15.4;
@@ -116,7 +194,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA647F62C4C7BF2005132C5 /* MediaWindow.xib in Resources */,
 				2BA647D22C4C7B41005132C5 /* Assets.xcassets in Resources */,
+				2BA647F82C4C7BF2005132C5 /* MovieOptionView.xib in Resources */,
+				2BA647F22C4C7BF2005132C5 /* NetworkOptionView.xib in Resources */,
 				2BA647D52C4C7B41005132C5 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +209,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA647D02C4C7B40005132C5 /* AppDelegate.swift in Sources */,
+				2BA647F32C4C7BF2005132C5 /* NetworkOptionViewController.swift in Sources */,
+				2BA647F52C4C7BF2005132C5 /* MediaPlayer.swift in Sources */,
+				2BA647F72C4C7BF2005132C5 /* MediaWindowController.swift in Sources */,
+				2BA647F92C4C7BF2005132C5 /* MovieOptionViewController.swift in Sources */,
+				2BA647F02C4C7BF2005132C5 /* MyView.swift in Sources */,
+				2BA647F42C4C7BF2005132C5 /* Packet.swift in Sources */,
+				2BA647EF2C4C7BF2005132C5 /* HourMinute.swift in Sources */,
+				2BA647FD2C4C7BF2005132C5 /* Window+extension.swift in Sources */,
+				2BA647FF2C4C7CB1005132C5 /* AppDelegate.swift in Sources */,
+				2BA647FB2C4C7BF2005132C5 /* Data+extension.swift in Sources */,
+				2BA647FC2C4C7BF2005132C5 /* URL+extension.swift in Sources */,
+				2BA647F12C4C7BF2005132C5 /* Connection.swift in Sources */,
+				2BA647FA2C4C7BF2005132C5 /* BinaryInteger+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +376,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blinky.AudioClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +404,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blinky.AudioClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
