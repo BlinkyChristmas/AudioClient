@@ -29,7 +29,11 @@
                 <outlet property="mediaController" destination="66z-e0-hKc" id="irO-kt-tbY"/>
             </connections>
         </customObject>
-        <customObject id="VpU-cX-ysq" customClass="MovieOptionViewController" customModule="AudioClient" customModuleProvider="target"/>
+        <customObject id="VpU-cX-ysq" customClass="MovieOptionViewController" customModule="AudioClient" customModuleProvider="target">
+            <connections>
+                <outlet property="audioPlayer" destination="42d-DE-kBG" id="AgD-pc-dpH"/>
+            </connections>
+        </customObject>
         <customObject id="Ju7-zT-Xmh" customClass="NetworkOptionViewController" customModule="AudioClient" customModuleProvider="target"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AudioClient" customModuleProvider="target">
             <connections>

@@ -8,7 +8,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MovieOptionViewController" customModule="AudioClient" customModuleProvider="target">
             <connections>
-                <outlet property="comboBox" destination="9Y3-zi-7nw" id="yNG-sE-njF"/>
                 <outlet property="view" destination="c22-O7-iKe" id="EY3-gT-MDk"/>
             </connections>
         </customObject>
@@ -55,48 +54,38 @@
                                     <binding destination="-2" name="enabled" keyPath="isEnabled" id="jzC-QN-7KI"/>
                                 </connections>
                             </button>
-                            <comboBox focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Y3-zi-7nw">
-                                <rect key="frame" x="123" y="18" width="254" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="nhC-aP-lmK"/>
-                                </constraints>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="mVT-Ug-b8T">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <objectValues>
-                                        <string>Item 1</string>
-                                        <string>Item 2</string>
-                                        <string>Item 3</string>
-                                    </objectValues>
-                                </comboBoxCell>
-                                <connections>
-                                    <binding destination="-2" name="enabled" keyPath="isEnabled" id="m1f-X3-ZMH"/>
-                                    <binding destination="-2" name="value" keyPath="projectorSerial" id="Wf7-dM-ai3"/>
-                                </connections>
-                            </comboBox>
                             <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Hv-O3-99f">
-                                <rect key="frame" x="18" y="22" width="64" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Projector:" id="ibv-Um-k2e">
+                                <rect key="frame" x="18" y="23" width="53" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Volume:" id="ibv-Um-k2e">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6yd-gf-NAM">
+                                <rect key="frame" x="122" y="14" width="386" height="28"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="lZd-qo-dNA">
+                                    <font key="font" size="12" name="Helvetica"/>
+                                </sliderCell>
+                                <connections>
+                                    <binding destination="-2" name="value" keyPath="audioPlayer.volume" id="hHv-Li-quH"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="6yd-gf-NAM" firstAttribute="leading" secondItem="Sj0-wm-V3h" secondAttribute="leading" id="2Vl-a9-S4y"/>
                             <constraint firstItem="4Hv-O3-99f" firstAttribute="leading" secondItem="720-7g-hgM" secondAttribute="leading" id="3Ox-Nz-8fK"/>
-                            <constraint firstItem="9Y3-zi-7nw" firstAttribute="top" secondItem="Sj0-wm-V3h" secondAttribute="bottom" constant="8" symbolic="YES" id="H2E-2G-hX2"/>
+                            <constraint firstItem="6yd-gf-NAM" firstAttribute="trailing" secondItem="Sj0-wm-V3h" secondAttribute="trailing" id="Cs0-jX-I3Q"/>
+                            <constraint firstItem="6yd-gf-NAM" firstAttribute="top" secondItem="Sj0-wm-V3h" secondAttribute="bottom" constant="8" symbolic="YES" id="Dd8-PL-d2b"/>
                             <constraint firstItem="720-7g-hgM" firstAttribute="leading" secondItem="tuV-8L-rGh" secondAttribute="leading" constant="20" symbolic="YES" id="R3j-ND-yyH"/>
                             <constraint firstItem="Sj0-wm-V3h" firstAttribute="firstBaseline" secondItem="720-7g-hgM" secondAttribute="firstBaseline" id="RAn-rh-OjF"/>
                             <constraint firstItem="Sj0-wm-V3h" firstAttribute="leading" secondItem="720-7g-hgM" secondAttribute="trailing" constant="8" symbolic="YES" id="Yhp-B5-sf7"/>
-                            <constraint firstItem="9Y3-zi-7nw" firstAttribute="firstBaseline" secondItem="4Hv-O3-99f" secondAttribute="firstBaseline" id="Z0C-th-QQ8"/>
-                            <constraint firstAttribute="bottom" secondItem="9Y3-zi-7nw" secondAttribute="bottom" constant="20" symbolic="YES" id="ZRq-6Q-Mko"/>
+                            <constraint firstAttribute="bottom" secondItem="6yd-gf-NAM" secondAttribute="bottom" constant="20" symbolic="YES" id="YsH-e2-Ydp"/>
                             <constraint firstItem="snR-3o-VkU" firstAttribute="leading" secondItem="Sj0-wm-V3h" secondAttribute="trailing" constant="8" symbolic="YES" id="aOI-Ql-8No"/>
                             <constraint firstItem="snR-3o-VkU" firstAttribute="firstBaseline" secondItem="720-7g-hgM" secondAttribute="firstBaseline" id="dEd-YC-J81"/>
                             <constraint firstItem="Sj0-wm-V3h" firstAttribute="top" secondItem="tuV-8L-rGh" secondAttribute="top" constant="20" symbolic="YES" id="fhR-3G-ckr"/>
                             <constraint firstAttribute="trailing" secondItem="snR-3o-VkU" secondAttribute="trailing" constant="20" symbolic="YES" id="jfr-oz-Hzh"/>
-                            <constraint firstItem="9Y3-zi-7nw" firstAttribute="leading" secondItem="Sj0-wm-V3h" secondAttribute="leading" id="wxJ-fu-CE6"/>
+                            <constraint firstItem="6yd-gf-NAM" firstAttribute="firstBaseline" secondItem="4Hv-O3-99f" secondAttribute="firstBaseline" id="v2y-G1-Z4c"/>
                         </constraints>
                     </view>
                 </box>
@@ -107,7 +96,7 @@
                 <constraint firstItem="JgT-5f-wwu" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" symbolic="YES" id="VPO-Cj-cRh"/>
                 <constraint firstAttribute="trailing" secondItem="JgT-5f-wwu" secondAttribute="trailing" constant="20" symbolic="YES" id="bH9-FM-fNK"/>
             </constraints>
-            <point key="canvasLocation" x="-85" y="76"/>
+            <point key="canvasLocation" x="-85" y="75.5"/>
         </customView>
         <userDefaultsController representsSharedInstance="YES" id="1Gq-tC-jnL"/>
     </objects>

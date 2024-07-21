@@ -14,7 +14,14 @@ class MediaPlayer : NSObject {
             return Int32( player.currentTime().seconds / 0.037)
         }
     }
-    
+    @objc dynamic var volume:Float {
+        get{
+            return player.volume
+        }
+        set {
+            player.volume = newValue
+        }
+    }
     // =====================================================================================
     override init() {
         player = AVPlayer()

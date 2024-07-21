@@ -11,7 +11,7 @@ class MovieOptionViewController : NSViewController {
     @objc dynamic var projectorSerial = ""
     @objc dynamic var isEnabled = true
     
-    @IBOutlet var comboBox:NSComboBox!
+    @IBOutlet var audioPlayer:MediaPlayer!
     
     // =======================================================================================================
     @IBAction func selectMovieLocation(_ sender: Any?) {
@@ -34,7 +34,7 @@ class MovieOptionViewController : NSViewController {
         super.viewDidLoad()
         
         // Lets populate our combo box!
-        comboBox.removeAllItems()
+        
     }
 
     // =======================================================================================================
