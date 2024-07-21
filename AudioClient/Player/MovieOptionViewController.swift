@@ -16,7 +16,7 @@ class MovieOptionViewController : NSViewController {
     // =======================================================================================================
     @IBAction func selectMovieLocation(_ sender: Any?) {
         let panel = NSOpenPanel()
-        panel.title = "WAV Location Selection"
+        panel.title = "Movie Location Selection"
         panel.prompt = "Set location"
         panel.canChooseFiles = false
         panel.canChooseDirectories = true
@@ -34,7 +34,7 @@ class MovieOptionViewController : NSViewController {
         super.viewDidLoad()
         
         // Lets populate our combo box!
-        //comboBox.removeAllItems()
+        comboBox.removeAllItems()
     }
 
     // =======================================================================================================

@@ -11,7 +11,7 @@ class Connection : NSObject {
     
     var incomingPacket: Data = Data()
     var idleTimer:Timer? = nil
-    var myHandle = "Media Client"
+    var myHandle = "AudioClient"
 
 
     // =============================================================================================================

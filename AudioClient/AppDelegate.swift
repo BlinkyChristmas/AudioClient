@@ -13,6 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var window: NSWindow!
     @IBOutlet var networkOptions: NetworkOptionViewController!
     @IBOutlet var movieOptions : MovieOptionViewController!
+    @IBOutlet var mediaWindowController : MediaWindowController!
     @IBOutlet var mediaPlayer : MediaPlayer!
 
     @IBOutlet var networkHolder : MyView!
@@ -59,6 +60,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func stateOffFired(timer:Timer) {
         DispatchQueue.main.async {
             if !self.networkOptions.connectTime.inRange(), self.connection.connected {
+                self.mediaWindowController.setShow(state: false)
                 
                 self.connection.stop(error:nil)
             }
@@ -151,6 +153,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             else {
                 // We want to stop any network stuff and timers
                 self.mediaPlayer.clear()
+                mediaWindowController.close()
                 networkOptions.isEnabled = true
                 movieOptions.isEnabled = true
                 connection.stop(error: nil)

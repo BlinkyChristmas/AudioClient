@@ -18,7 +18,7 @@ class MediaWindowController : NSWindowController {
     func setShow(state:Bool) {
         if (state) {
             //Swift.print("Bring up Show Window")
-            self.showWindow(nil)
+            //self.showWindow(nil)
             if (!self.window!.isFullscreen) {
                 //self.window?.toggleFullScreen(nil)
             }
@@ -55,8 +55,8 @@ class MediaWindowController : NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         
-        mediaPlayer.playerLayer.frame = self.window!.contentView!.layer!.bounds
-        self.window!.contentView!.layer?.addSublayer(mediaPlayer.playerLayer)
+        //mediaPlayer.playerLayer.frame = self.window!.contentView!.layer!.bounds
+        //self.window!.contentView!.layer?.addSublayer(mediaPlayer.playerLayer)
     }
 
     // ======================================================================================================================
@@ -67,11 +67,11 @@ class MediaWindowController : NSWindowController {
             if (self.window!.screen == NSScreen.main) {
                 // We need to move this window to the second window
                 // It is!, we need to move it
-                let size = NSScreen.screens[1].visibleFrame.size
-                let origin = NSScreen.screens[1].visibleFrame.origin
-                self.window!.setFrame(NSRect(origin: origin, size: size), display: self.window!.isVisible )
+                //let size = NSScreen.screens[1].visibleFrame.size
+                //let origin = NSScreen.screens[1].visibleFrame.origin
+                //self.window!.setFrame(NSRect(origin: origin, size: size), display: self.window!.isVisible )
                 if (!self.window!.isFullscreen) {
-                    self.window?.toggleFullScreen(nil)
+                    //self.window?.toggleFullScreen(nil)
                 }
                 
             }
@@ -80,11 +80,11 @@ class MediaWindowController : NSWindowController {
         else if ( NSScreen.screens.count < 2) {
             if (self.window!.screen != NSScreen.main) {
                 // We need to move this window to the main window
-                let size = NSScreen.screens[0].visibleFrame.size
-                let origin = NSScreen.screens[0].visibleFrame.origin
-                self.window!.setFrame(NSRect(origin: origin, size: size), display: self.window!.isVisible )
+                //let size = NSScreen.screens[0].visibleFrame.size
+                //let origin = NSScreen.screens[0].visibleFrame.origin
+                //self.window!.setFrame(NSRect(origin: origin, size: size), display: self.window!.isVisible )
                 if (self.window!.isFullscreen) {
-                    self.window?.toggleFullScreen(nil)
+                    //self.window?.toggleFullScreen(nil)
                 }
 
             }
