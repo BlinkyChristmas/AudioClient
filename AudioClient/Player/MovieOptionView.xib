@@ -64,7 +64,7 @@
                             </textField>
                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6yd-gf-NAM">
                                 <rect key="frame" x="122" y="14" width="386" height="28"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="lZd-qo-dNA">
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="lZd-qo-dNA">
                                     <font key="font" size="12" name="Helvetica"/>
                                 </sliderCell>
                                 <connections>
